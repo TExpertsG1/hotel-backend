@@ -1,32 +1,23 @@
 package hotel;
 
-public class Funcionario extends Cadastro{
-	String setor;
-	String cargo;
-	double salario;
-	
-	public void cadastrarFuncionario() {
-		
+public class Funcionario {
+	private String nome;
+	private String cargo;
+
+	public Funcionario(String nome, String cargo) {
+		this.nome = nome;
+		this.cargo = cargo;
 	}
-	public void removerFuncionario() {
-		
+
+	public String getNomeFuncionario() {
+		return this.nome;
 	}
-	public void editarCadastroFunc() {
-		
+
+	public String getCartoFuncionario(String cargo) {
+		return this.cargo;
 	}
-	public void cadastrarCliente() {
-		
-	}
-	public void removerCliente() {
-		
-	}
-	public void editarCadastroCliente() {
-		
-	}
-	public void fazerReserva() {
-		
-	}
-	public void cancelarReserva() {
-		
+
+	public void setCargoFuncionario(String newCargo) {
+		cargo = newCargo;
 	}
 }

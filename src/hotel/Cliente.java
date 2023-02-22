@@ -1,36 +1,29 @@
 package hotel;
 
 
-public class Cliente extends Cadastro {
-	int idCliente;
-	
-    public void fazerPagamento() {
-		
-	}
-	
-	public void escolherQuarto() {
-		
-	}
-	
-	public void reservarQuarto() {
-		
-	}
-	
-	public void cancelarReserva() {
-		
-	}
-	public void fazerLogin() {
-		
-	}
-	
-	public void editarDadosCadastrais() {
-		
-	}
-	public void editarDadosReserva() {
-}
+public class Cliente {
+	private String nome;
+	private String email;
 
-	public void setCpf(long nextLong) {
-		// TODO Auto-generated method stub
-		
+	public Cliente (String nome, String email) {
+		this.nome = nome;
+		this.email = email;
 	}
+
+	public String getNomeCliente () {
+		return nome;
+	}
+
+	public void setNomeCliente (String newNome) {
+		nome = newNome;
+	}
+
+	public String getEmailCliente () {
+		return email;
+	}
+
+	public void setEmailCliente (String newEmail) {
+		email = newEmail;
+	}
+  
 }
