@@ -3,47 +3,51 @@ package hotel;
 import java.time.LocalDate;
 
 public class Reserva {
-	private LocalDate checkIn;
-	private LocalDate checkOut;
-	private int numeroAdultos;
-	private int numeroCriancas;
-	
-	public Reserva(LocalDate checkIn, LocalDate checkOut, int numeroAdultos, int numeroCriancas) {
-		this.checkIn = checkIn;
-		this.checkOut = checkOut;
-		this.numeroAdultos = numeroAdultos;
-		this.numeroCriancas = numeroCriancas;
+    private Hospede hospede;
+    private Quarto quarto;
+    private LocalDate dataCheckin;
+    private LocalDate dataCheckout;
+	private int quantidadeAdulto;
+	private int quantidadeCrianca;
+
+	public Reserva(Hospede hospede, Quarto quarto, LocalDate dataCheckin, LocalDate dataCheckout, int quantidadeAdulto, int quantidadeCrianca) {
+        this.hospede = hospede;
+        this.quarto = quarto;
+        this.dataCheckin = dataCheckin;
+        this.dataCheckout = dataCheckout;
+		this.quantidadeAdulto = quantidadeAdulto;
+		this.quantidadeCrianca = quantidadeCrianca;
+    }
+
+    public Hospede getHospede() {
+        return hospede;
+    }
+
+    public Quarto getQuarto() {
+        return quarto;
+    }
+
+    public LocalDate getDataCheckin() {
+        return dataCheckin;
+    }
+
+    public LocalDate getDataCheckout() {
+        return dataCheckout;
+    }
+
+	public int getQuantidadeAdulto() {
+		return quantidadeAdulto;
 	}
 
-	public LocalDate getCheckIn() {
-		return checkIn;
-	}
-	
-	public void setCheckIn(LocalDate checkIn) {
-		this.checkIn = checkIn;
-	}
-	
-	public LocalDate getCheckOut() {
-		return checkOut;
+	public void setQuantidadeAdulto(int quantidadeAdulto) {
+		this.quantidadeAdulto = quantidadeAdulto;
 	}
 
-	public void setCheckOut(LocalDate checkOut) {
-		this.checkOut = checkOut;
+	public int getQuantidadeCrianca() {
+		return quantidadeCrianca;
 	}
-	
-	public int getNumeroAdultos() {
-		return numeroAdultos;
-	}
-	
-	public void setNumeroAdultos(int newNumeroAdultos) {
-		numeroAdultos = newNumeroAdultos;
-	}
-	
-	public int getNumeroCriancas() {
-		return numeroCriancas;
-	}
-	
-	public void setNumeroCriancas(int newNumeroCriancas) {
-		numeroCriancas = newNumeroCriancas;
+
+	public void setQuantidadeCrianca(int quantidadeCrianca) {
+		this.quantidadeCrianca = quantidadeCrianca;
 	}
 }
