@@ -38,7 +38,6 @@ public class Main {
         hotel.cadastrarReserva(reserva2);
         hotel.cadastrarReserva(reserva3);
 
-        CalcularPreco calcular = new CalcularPreco();
         for (Reserva reserva : hotel.getReservas()) {
            System.out.println(reserva.toString() + " Valor Total: R$ " + CalcularPreco.precoReserva(reserva)); 
         }
