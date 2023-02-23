@@ -7,16 +7,17 @@ public class Reserva {
     private Quarto quarto;
     private LocalDate dataCheckin;
     private LocalDate dataCheckout;
-	private int quantidadeAdulto;
-	private int quantidadeCrianca;
+    private int quantidadeAdulto;
+    private int quantidadeCrianca;
 
-	public Reserva(Hospede hospede, Quarto quarto, LocalDate dataCheckin, LocalDate dataCheckout, int quantidadeAdulto, int quantidadeCrianca) {
+    public Reserva(Hospede hospede, Quarto quarto, LocalDate dataCheckin, LocalDate dataCheckout, int quantidadeAdulto,
+            int quantidadeCrianca) {
         this.hospede = hospede;
         this.quarto = quarto;
         this.dataCheckin = dataCheckin;
         this.dataCheckout = dataCheckout;
-		this.quantidadeAdulto = quantidadeAdulto;
-		this.quantidadeCrianca = quantidadeCrianca;
+        this.quantidadeAdulto = quantidadeAdulto;
+        this.quantidadeCrianca = quantidadeCrianca;
     }
 
     public Hospede getHospede() {
@@ -35,19 +36,26 @@ public class Reserva {
         return dataCheckout;
     }
 
-	public int getQuantidadeAdulto() {
-		return quantidadeAdulto;
-	}
+    public int getQuantidadeAdulto() {
+        return quantidadeAdulto;
+    }
 
-	public void setQuantidadeAdulto(int quantidadeAdulto) {
-		this.quantidadeAdulto = quantidadeAdulto;
-	}
+    public void setQuantidadeAdulto(int quantidadeAdulto) {
+        this.quantidadeAdulto = quantidadeAdulto;
+    }
 
-	public int getQuantidadeCrianca() {
-		return quantidadeCrianca;
-	}
+    public int getQuantidadeCrianca() {
+        return quantidadeCrianca;
+    }
 
-	public void setQuantidadeCrianca(int quantidadeCrianca) {
-		this.quantidadeCrianca = quantidadeCrianca;
-	}
+    public void setQuantidadeCrianca(int quantidadeCrianca) {
+        this.quantidadeCrianca = quantidadeCrianca;
+    }
+
+    @Override
+    public String toString() {
+        return "Reservas: Quarto nº: " + getQuarto().getNumero() + ", Data CheckIn: " + dataCheckin
+                + ", Data Checkout: "
+                + dataCheckout + ", Adultos: " + quantidadeAdulto + ", Crianças: " + quantidadeCrianca;
+    }
 }

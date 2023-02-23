@@ -21,6 +21,6 @@ public class Hospede extends Pessoa{
 		System.out.println("Idade: " + hospede.getIdade());
 		System.out.println("Email: " + hospede.getEmail());
 		System.out.println("Telefone: " + hospede.getTelefone());
-		System.out.println("------------------------");
+		System.out.println("-------------");
 	}
 }

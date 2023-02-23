@@ -38,21 +38,19 @@ public class Main {
         hotel.cadastrarReserva(reserva2);
         hotel.cadastrarReserva(reserva3);
 
-        double preco1 = CalcularPreco.precoReserva(reserva1);
-        double preco2 = CalcularPreco.precoReserva(reserva2);
-        double preco3 = CalcularPreco.precoReserva(reserva3);
-        System.out.println("Preço da reserva 1: R$" + preco1);
-        System.out.println("Preço da reserva 2: R$" + preco2);
-        System.out.println("Preço da reserva 3: R$" + preco3);
-        System.out.println("-----------------------------");
+        CalcularPreco calcular = new CalcularPreco();
+        for (Reserva reserva : hotel.getReservas()) {
+           System.out.println(reserva.toString() + " Valor Total: R$ " + CalcularPreco.precoReserva(reserva)); 
+        }
+        System.out.println("-------------");
 
-        Funcionario recepcionista1 = new Funcionario("Michelle", 0, "Michelle@email.com", "Recepcionista", 2500.00);
-        Funcionario recepcionista2 = new Funcionario("Bruno", 0, "Bruno@email.com", "Recepcionista", 2500.00);
-        Funcionario gerente = new Funcionario("André Luiz", 0, "AndreLuiz@gmail.com", "Gerente", 3500.00);
-        Funcionario cozinheiro1 = new Funcionario("André Barbosa", 0, "AndreBarbosa@email.com", "Cozinheiro", 3000.00);
+        Funcionario recepcionista1 = new Funcionario("Michelle", 38, "Michelle@email.com", "Recepcionista", 2500.00);
+        Funcionario recepcionista2 = new Funcionario("Bruno", 27, "Bruno@email.com", "Recepcionista", 2500.00);
+        Funcionario gerente = new Funcionario("André Luiz", 32, "AndreLuiz@gmail.com", "Gerente", 3500.00);
+        Funcionario cozinheiro1 = new Funcionario("André Barbosa", 40, "AndreBarbosa@email.com", "Cozinheiro", 3000.00);
         Funcionario cozinheiro2 = new Funcionario("Arthur", 23, "Arthur@email.com", "Cozinheiro", 3000.00);
-        Funcionario zelador1 = new Funcionario("Angela", 0, "Angela@email.com", "Zelador", 2500.00);
-        Funcionario zelador2 = new Funcionario("Zenilson", 0, "Zenilson@email.com", "Zelador", 2500.00);
+        Funcionario zelador1 = new Funcionario("Angela", 28, "Angela@email.com", "Zelador", 2500.00);
+        Funcionario zelador2 = new Funcionario("Zenilson", 30, "Zenilson@email.com", "Zelador", 2500.00);
 
         hotel.cadastrarFuncionario(recepcionista1);
         hotel.cadastrarFuncionario(recepcionista2);
@@ -61,7 +59,7 @@ public class Main {
         hotel.cadastrarFuncionario(cozinheiro2);
         hotel.cadastrarFuncionario(zelador1);
         hotel.cadastrarFuncionario(zelador2);
-        
+
         for (Funcionario funcionario : hotel.getFuncionarios()) {
             Funcionario.imprimirFuncionario(funcionario);
         }
