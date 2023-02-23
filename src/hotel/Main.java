@@ -44,13 +44,13 @@ public class Main {
         }
         System.out.println("-------------");
 
-        Funcionario recepcionista1 = new Funcionario("Michelle", 0, "Michelle@email.com", Cargos.RECEPCIONISTA);
-        Funcionario recepcionista2 = new Funcionario("Bruno", 0, "Bruno@email.com", Cargos.AUXILIAR_RECEPCAO);
-        Funcionario gerente = new Funcionario("André Luiz", 0, "AndreLuiz@gmail.com", Cargos.CAMAREIRA);
-        Funcionario cozinheiro1 = new Funcionario("André Barbosa", 0, "AndreBarbosa@email.com", Cargos.GERENTE);
+        Funcionario recepcionista1 = new Funcionario("Michelle", 38, "Michelle@email.com", Cargos.RECEPCIONISTA);
+        Funcionario recepcionista2 = new Funcionario("Bruno", 27, "Bruno@email.com", Cargos.AUXILIAR_RECEPCAO);
+        Funcionario gerente = new Funcionario("André Luiz", 32, "AndreLuiz@gmail.com", Cargos.CAMAREIRA);
+        Funcionario cozinheiro1 = new Funcionario("André Barbosa", 40, "AndreBarbosa@email.com", Cargos.GERENTE);
         Funcionario cozinheiro2 = new Funcionario("Arthur", 23, "Arthur@email.com", Cargos.RECEPCIONISTA);
-        Funcionario zelador1 = new Funcionario("Angela", 0, "Angela@email.com", Cargos.AUXILIAR_RECEPCAO);
-        Funcionario zelador2 = new Funcionario("Zenilson", 0, "Zenilson@email.com", Cargos.CAMAREIRA);
+        Funcionario zelador1 = new Funcionario("Angela", 28, "Angela@email.com", Cargos.AUXILIAR_RECEPCAO);
+        Funcionario zelador2 = new Funcionario("Zenilson", 30, "Zenilson@email.com", Cargos.CAMAREIRA);
 
         hotel.cadastrarFuncionario(recepcionista1);
         hotel.cadastrarFuncionario(recepcionista2);
