@@ -43,21 +43,21 @@ public class Main {
         }
         System.out.println("-------------");
 
-        Funcionario recepcionista1 = new Funcionario("Michelle", 38, "Michelle@email.com", Cargos.RECEPCIONISTA);
-        Funcionario recepcionista2 = new Funcionario("Bruno", 27, "Bruno@email.com", Cargos.AUXILIAR_RECEPCAO);
-        Funcionario gerente = new Funcionario("André Luiz", 32, "AndreLuiz@gmail.com", Cargos.CAMAREIRA);
-        Funcionario cozinheiro1 = new Funcionario("André Barbosa", 40, "AndreBarbosa@email.com", Cargos.GERENTE);
-        Funcionario cozinheiro2 = new Funcionario("Arthur", 23, "Arthur@email.com", Cargos.RECEPCIONISTA);
-        Funcionario zelador1 = new Funcionario("Angela", 28, "Angela@email.com", Cargos.AUXILIAR_RECEPCAO);
-        Funcionario zelador2 = new Funcionario("Zenilson", 30, "Zenilson@email.com", Cargos.CAMAREIRA);
+        Funcionario funcionario1 = new Funcionario("Michelle", 38, "Michelle@email.com", Cargos.RECEPCIONISTA);
+        Funcionario funcionario2 = new Funcionario("Bruno", 27, "Bruno@email.com", Cargos.AUXILIAR_RECEPCAO);
+        Funcionario funcionario3 = new Funcionario("André Luiz", 32, "AndreLuiz@gmail.com", Cargos.CAMAREIRA);
+        Funcionario funcionario4 = new Funcionario("André Barbosa", 40, "AndreBarbosa@email.com", Cargos.GERENTE);
+        Funcionario funcionario5 = new Funcionario("Arthur", 23, "Arthur@email.com", Cargos.RECEPCIONISTA);
+        Funcionario funcionario6 = new Funcionario("Angela", 28, "Angela@email.com", Cargos.AUXILIAR_RECEPCAO);
+        Funcionario funcionario7 = new Funcionario("Zenilson", 30, "Zenilson@email.com", Cargos.CAMAREIRA);
 
-        hotel.cadastrarFuncionario(recepcionista1);
-        hotel.cadastrarFuncionario(recepcionista2);
-        hotel.cadastrarFuncionario(gerente);
-        hotel.cadastrarFuncionario(cozinheiro1);
-        hotel.cadastrarFuncionario(cozinheiro2);
-        hotel.cadastrarFuncionario(zelador1);
-        hotel.cadastrarFuncionario(zelador2);
+        hotel.cadastrarFuncionario(funcionario1);
+        hotel.cadastrarFuncionario(funcionario2);
+        hotel.cadastrarFuncionario(funcionario3);
+        hotel.cadastrarFuncionario(funcionario4);
+        hotel.cadastrarFuncionario(funcionario5);
+        hotel.cadastrarFuncionario(funcionario6);
+        hotel.cadastrarFuncionario(funcionario7);
 
         for (Funcionario funcionario : hotel.getFuncionarios()) {
             Funcionario.imprimirFuncionario(funcionario);
