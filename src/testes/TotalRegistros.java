@@ -19,7 +19,7 @@ public class TotalRegistros {
 		rs.next();
 		
 		int total = rs.getInt("total");
-		System.out.println("Total de Cargos: " + total);
+		System.out.println("Total de Cargo: " + total);
 
 		rs.close();
 		conn.close();

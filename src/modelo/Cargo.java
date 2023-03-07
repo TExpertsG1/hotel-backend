@@ -46,5 +46,10 @@ public class Cargo {
 		
 	}
 
+	public void add(Cargo cargo) {
+		// TODO Auto-generated method stub
+		
+	}
+
 
 }

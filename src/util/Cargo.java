@@ -8,8 +8,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 import infra.FabricaConnexao;
+import modelo.Cargo;
 
 public class Cargo {
+
+	public Cargo(int int1, String string, double double1) {
+		// TODO Auto-generated constructor stub
+	}
 
 	public static void main(String[] args) throws SQLException {
 		Connection conn = FabricaConnexao.criaConexao();
@@ -20,7 +25,7 @@ public class Cargo {
 		ResultSet rs = st.executeQuery();
 		
 		
-		List<Cargo> cargo = new ArrayList<>();
+		List<Cargo> cargos = new ArrayList<>();
 		
 		while(rs.next()) {
 			Cargo cargo = new Cargo(
@@ -29,10 +34,10 @@ public class Cargo {
 					rs.getDouble("salario")
 					);
 			
-			cargo.add(cargo);
+			cargos.add(cargo);
 		}
 		
-		cargo.forEach(cargo -> System.out.println(cargo));
+		cargos.forEach(cargo1 -> System.out.println(cargo1));
 		
 		rs.close();
 		st.close();

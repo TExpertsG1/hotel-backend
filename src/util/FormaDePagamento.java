@@ -8,6 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import infra.FabricaConnexao;
+import modelo.Pagamento;
 
 public class FormaDePagamento {
 
@@ -21,10 +22,10 @@ public class FormaDePagamento {
 		ResultSet rs = st.executeQuery();
 		
 		
-		List<FormaDePagamento> pgtos = new ArrayList<>();
+		List<Pagamento> pgtos = new ArrayList<>();
 		
 		while(rs.next()) {
-			FormaDePagamento pgto = new FormaDePagamento(
+			Pagamento pgto = new Pagamento(
 					rs.getInt("idpagamento"),
 					rs.getString("forma_pagamento"),
 					rs.getInt("idreserva")
